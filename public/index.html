@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chat Application</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"  type="text/javascript"></script>
+	<link href='style.css' rel="stylesheet">
+	<style type="text/css" rel = 'stylesheet'>
+		#footer{
+			font-size: 30px;
+			text-align: center;
+			border-top-style: dotted;
+    		border-right: blue solid;
+    		border-bottom-style: dotted;
+    		border-left:blue solid;
+    		max-width: 600px;
+    		margin: 30px auto;
+		}
+		#span{
+			color: #f17d08;
+			text-align: center;
+			font-family: 'Abril Fatface', cursive;
+		}
+		#heading{
+			color : #ff7600;
+			text-align: center;
+			font-family: 'Abril Fatface', cursive;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="heading">Let's start chat</h1>
+	<div id = "mario-chat">
+		<div id = "chat-window">
+			<div id = "output"></div>
+			<div id="feedback"></div>
+		</div>
+		<input id="handle" type="text" placeholder="Name" >
+		<input id="message" type="text" placeholder="Message">
+		<button id = "send">Send</button>
+	</div>
+	
+	
+</body>
+<script src = 'chat.js' type="text/javascript"></script>
+<footer id ='footer'>
+	<p>Designed By <a id="span"  href="https://www.linkedin.com/in/rakesh-yadav-68902813a"  target="_blank">Rakesh Yadav</a> </p>
+</footer>
+</html>
